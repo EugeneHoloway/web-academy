@@ -1,0 +1,59 @@
+/* max width 992px */
+
+@media screen and (max-width: 992px) and (min-width: 767px) {
+    .header__image {
+        max-width: 992px;
+        max-height: 508px;
+        display: table-cell;
+        vertical-align: top;
+        position: relative;
+    }
+    .header__image-l {
+        max-width: 100%;
+        height: auto;
+        max-height: 100%;
+    }
+    .header__image-xl {
+        display: none !important;
+    }
+    .header__image-m {
+        display: none !important;
+    }
+    .header__image-s {
+        display: none !important;
+    }
+    .header__movie_details {
+        font-size: 12px;
+    }
+    .grid {
+        margin: 0 auto;
+        max-width: 992px;
+        margin: 1vw 5vw 3vw 5vw;
+    }
+    .grid__row {
+        display: flex;
+        position: relative;
+        min-height: 500px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .grid__item {
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: 31%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 33px 0;
+        box-shadow: 0 2px 35px 0 rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        position: relative;
+        margin-left: 3.3%;
+    }
+    .grid__item:nth-child(3n+1) {
+        margin-left: 0;
+    }
+    .fa-bars {
+        display: none !important;
+    }
+}

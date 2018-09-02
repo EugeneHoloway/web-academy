@@ -1,0 +1,13 @@
+@import './base.scss';
+@import './header.scss';
+@import './footer.scss';
+@import './content.scss';
+@import './992px.scss';
+@import './767px.scss';
+@import './480px.scss';
+.movie-page {
+    max-width: 2880px;
+    margin: 0 auto;
+    border: 1px solid #80818a;
+    background-color: #f8f8f8;
+}

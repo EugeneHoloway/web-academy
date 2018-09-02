@@ -1,0 +1,178 @@
+.movie__controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 1px solid #dfdfdf;
+    margin: 1vw 5vw 3vw 5vw;
+    align-items: center;
+}
+
+.movie__rank {
+    padding: 15px;
+    cursor: pointer;
+    color: #80818a;
+}
+
+.movie__rank-active {
+    border-bottom: 2px solid #ff0079;
+    color: #ff0079;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.fa-chevron-down {
+    padding-left: 4px;
+    color: #80818a;
+    font-size: 10px;
+}
+
+.fa-th-large {
+    color: #ff0079;
+}
+
+.movie__list-style {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 4vw;
+}
+
+.movie__list-type {
+    display: inline-block;
+    color: #868686;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.grid {
+    max-width: 2880px;
+    margin: 1vw 5vw 3vw 5vw;
+}
+
+.grid__row {
+    display: flex;
+    position: relative;
+    min-height: 500px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.grid__item {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 23%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 30px 0;
+    box-shadow: 0 2px 35px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.description {
+    display: flex;
+    background-color: #fff;
+}
+
+.content__rating-number {
+    flex-direction: row;
+    align-self: center;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #ff0079;
+    color: #ff0079;
+    padding: 0.1vw 0.5vw;
+    border-width: 1px;
+    margin-right: 20px;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.text-block-2 {
+    display: flex;
+}
+
+.image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.text-block {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 20%;
+    height: 20%;
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #494c62;
+}
+
+.text-block p {
+    color: #80818a;
+    font-size: 13px;
+}
+
+.text-block-year {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 20%;
+    height: 95%;
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #babbc3;
+    font-size: 18px;
+}
+
+.image-block {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 80%;
+    height: 80%;
+}
+
+.logan {
+    background-image: url('../assets/logan.png')
+}
+
+.john {
+    background-image: url('../assets/john.png')
+}
+
+.fantastic {
+    background-image: url('../assets/fantastic.png')
+}
+
+.beauty {
+    background-image: url('../assets/beauty.png')
+}
+
+.justice {
+    background-image: url('../assets/justice.png')
+}
+
+.loading__icon {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-spinner {
+    font-size: 30px;
+    color: #ff0079;
+}
+
+.loading__text {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    color: #babbc3;
+}

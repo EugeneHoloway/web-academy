@@ -1,0 +1,59 @@
+/* max width 767px */
+
+@media screen and (max-width: 767px) and (min-width: 481px) {
+    .header__image {
+        max-width: 767px;
+        max-height: 452px;
+        display: table-cell;
+        vertical-align: top;
+        display: block;
+        position: relative;
+    }
+    .header__image-m {
+        max-width: 100%;
+        height: auto;
+        max-height: 100%;
+    }
+    .header__image-xl {
+        display: none !important;
+    }
+    .header__image-l {
+        display: none !important;
+    }
+    .header__image-s {
+        display: none !important;
+    }
+    .header__movie_details {
+        font-size: 12px;
+    }
+    .grid {
+        max-width: 767px;
+        margin: 1vw 5vw 3vw 5vw;
+    }
+    .grid__row {
+        display: flex;
+        position: relative;
+        min-height: 500px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .grid__item {
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: 48%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        margin: 2.1% 1.8% 2.3% 0%;
+        box-shadow: 0 2px 35px 0 rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        position: relative;
+    }
+    .header__movie_rating-block {
+        display: block !important;
+        display: none !important;
+    }
+    .fa-bars {
+        display: none !important;
+    }
+}
