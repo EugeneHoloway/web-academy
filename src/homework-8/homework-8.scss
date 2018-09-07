@@ -1,0 +1,11 @@
+@import '../common/styles/base.scss';
+@import './styles/variables';
+@import './styles/mixins';
+@import './styles/header';
+@import './styles/content';
+@import './styles/footer';
+@import './styles/featuring';
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}

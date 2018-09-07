@@ -1,0 +1,189 @@
+@import './mixins';
+.page-header {
+    height: 505px;
+    background-color: black;
+    background-image: url(../../assets/images/header-lesson-8.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    @include laptop {
+        background-size: 100%;
+        height: 480px;
+        background-image: url(../../assets/images/header-lesson-8-992px.png);
+    }
+    @include tablet {
+        background-size: 100%;
+        height: 380px;
+        background-image: url(../../assets/images/header-lesson-8-767px.png);
+    }
+    @include mobile {
+        background-position: left contain;
+        height: 320px;
+        background-image: url(../../assets/images/header-lesson-8-480px.png);
+    }
+}
+
+.page-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 77px;
+    background-color: $primary-color;
+    opacity: 0.93;
+}
+
+.page-menu {
+    display: flex;
+    display: inline-block;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.page-menu__btn {
+    font-weight: 400;
+    opacity: 1;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: #fff;
+}
+
+.fa-chevron-down {
+    font-size: 10px;
+    padding-left: 5px;
+}
+
+.logo {
+    font-size: 30px;
+    color: #fff;
+    padding-left: $default-left-padding;
+    padding-right: 20px;
+}
+
+.page-auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 77px;
+    width: 77px;
+    background-color: #fff;
+    .page-auth__auth-details {
+        display: flex;
+        display: inline-block;
+        background-color: #fff;
+        align-content: center;
+        .page-search__query {
+            font-size: 1.2rem;
+            padding-left: 10px;
+        }
+    }
+}
+
+.auth-details__text {
+    color: $primary-color;
+    height: 50%;
+    transform: translateY(50%);
+}
+
+.fa-search {
+    color: $primary-color;
+    font-size: 24px;
+}
+
+.page-search {
+    background-color: #ebebeb;
+    height: 77px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.page-search__query {
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.page-search__icon {
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.auth-details__icon {
+    width: 50px;
+}
+
+.fa-user-astronaut {
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    color: $primary-color;
+    height: 50%;
+    transform: translateY(50%);
+}
+
+.page-header__movie-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 20%;
+    transform: translateY(50%);
+    padding-left: $default-left-padding;
+    width: 30%;
+    @include tablet {
+        width: 70%;
+        height: 5%;
+    }
+}
+
+.movie-details__rating {
+    color: $rating-color;
+}
+
+.rating__movie {
+    font-size: 50px;
+    @include tablet {
+        font-size: 40px;
+        @include mobile {
+            font-size: 30px;
+        }
+    }
+}
+
+.rating__max {
+    font-size: 40px;
+    @include tablet {
+        font-size: 30px;
+        @include mobile {
+            font-size: 20px;
+        }
+    }
+}
+
+.movie-details__title {
+    color: $movie-title-color;
+    font-size: 30px;
+    @include mobile {
+        font-size: 25px;
+    }
+}
+
+.movie-details__description {
+    font-size: $base-font-size;
+    color: #fff;
+}
+
+.movie-details__tag {
+    @include movie__tag;
+}
+
+.movie-details__tag {
+    @include movie__tag;
+}
+
+.movie-details__review {
+    @include movie__review;
+    @include mobile {
+        padding: 10px 10px 25px 10px;
+    }
+}

@@ -1,0 +1,252 @@
+    @import './mixins';
+    .content {
+        max-width: 1440px;
+        background-image: linear-gradient(110deg, #3023ae, #a65dce 77%, #c86dd7);
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    
+    .content__box {
+        max-width: 1110px;
+        height: 555px;
+        background-color: #f5f5f5;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        @include mobile {
+            display: flex;
+            flex-wrap: wrap;
+            height: 750px;
+        }
+    }
+    
+    .box__movie-details {
+        max-height: 555px;
+        width: 40%;
+        background-image: url(../../assets/images/walkingdead.jpg);
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        @include laptop {
+            background-image: url(../../assets/images/walkingdead.jpg);
+            background-size: cover !important;
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+        }
+        @include tablet {
+            background-image: url(../../assets/images/walkingdead.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+        @include mobile {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-image: url(../../assets/images/walkingdead.jpg);
+            width: 100%;
+            max-height: 700px;
+        }
+    }
+    
+    .chat__movie-details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+        transform: translateY(50%);
+        padding-left: $default-left-padding;
+        width: 90%;
+        @include tablet {
+            height: 60%;
+            transform: translateY(50%);
+            @include mobile {
+                height: 5%;
+                transform: translateY(50%);
+            }
+        }
+    }
+    
+    .chat-movie-details__rating {
+        color: $rating-color;
+    }
+    
+    .chat-rating__movie {
+        font-size: 50px;
+    }
+    
+    .chat-rating__max {
+        font-size: 40px;
+    }
+    
+    .chat-movie-details__title {
+        color: $movie-title-color;
+        font-size: 30px;
+    }
+    
+    .chat-movie-details__description {
+        font-size: $base-font-size;
+        color: #fff;
+    }
+    
+    .chat-movie-details__tag {
+        @include movie__tag;
+    }
+    
+    .chat-movie-details__review {
+        @include movie__review;
+    }
+    
+    .box__movie-chat {
+        width: 60%;
+        @include mobile {
+            width: 100%;
+        }
+    }
+    
+    .box__title {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 34px;
+    }
+    
+    .title__comments {
+        font-size: 30px;
+        color: #4a4a4a;
+        margin: 0 auto;
+    }
+    
+    .box__comments {
+        padding: 0 22px 22px 22px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .comments__block {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .comment__icon-1 {
+        border: 1px solid transparent;
+        border-radius: 3px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        padding: 23px;
+        color: #888888;
+        line-height: 2;
+        overflow: hidden;
+        max-height: 160px;
+    }
+    
+    .comment__icon-2 {
+        border: 1px solid transparent;
+        border-radius: 3px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        padding: 23px;
+        color: #888888;
+        line-height: 2;
+        overflow: hidden;
+        max-height: 160px;
+    }
+    
+    .comment__1 {
+        overflow: hidden;
+    }
+    
+    .user__details {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .user__name-date {
+        padding-left: 10px;
+        line-height: 150%;
+        flex-grow: 1;
+    }
+    
+    .user__name {
+        font-weight: 600;
+    }
+    
+    .user__comment-date {
+        font-size: 10px;
+        vertical-align: top;
+    }
+    
+    .user__comment-heart {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .fa-heart {
+        color: red;
+        font-size: 18px;
+    }
+    
+    .user__icon {
+        max-width: 34px;
+        max-height: 34px;
+    }
+    
+    .comments__scroll {
+        display: flex;
+        flex-direction: column;
+        width: 10%;
+    }
+    
+    .scroll__inactive {
+        width: 5px;
+        height: 340px;
+        margin: 0 auto;
+        background-color: #e4e4e4;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        z-index: 1;
+    }
+    
+    .scroll__active {
+        width: 5px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 30px;
+        background-color: #9013fe;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        z-index: 2;
+    }
+    
+    .write-comment {
+        background-color: #fff;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        padding: 10px 10px;
+        background-color: #fff;
+        border: 0px solid;
+        margin: 0 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .fa-paper-plane {
+        background: none;
+        border: 0px;
+        font-size: 18px;
+        color: $primary-color;
+    }
+    
+    .write-comment__query {
+        background: none;
+        border: 0px;
+    }
+    
+    .write-comment__icon {
+        background: none;
+        border: 0px;
+    }

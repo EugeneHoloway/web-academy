@@ -1,0 +1,75 @@
+@import './variables';
+$xs-screen: 576px;
+$sm-screen: 768px;
+$md-screen: 992px;
+$lg-screen: 1440px;
+@mixin xs-mobile {
+    @media (max-width: #{$xs-screen - 0.1px}) {
+        @content;
+    }
+}
+
+@mixin xs-mobile-markets {
+    @media (max-width: #{$xs-screen -0.1px}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$sm-screen - 0.1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$md-screen - 0.1px}) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (max-width: #{$lg-screen - 0.1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$lg-screen}) {
+        @content;
+    }
+}
+
+@mixin landscape {
+    @media (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin movie__tag {
+    padding: 5px 10px;
+    font-weight: 100;
+    text-align: center;
+    background-color: $primary-color;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 12px;
+    margin: 10px 10px 20px 0;
+}
+
+@mixin movie__review {
+    padding: 15px 30px 30px 30px;
+    font-weight: 100;
+    background-color: $primary-color;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 2px 2px 9px #6200b8;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    &:hover {
+        background-color: #fff;
+        color: $primary-color;
+    }
+}

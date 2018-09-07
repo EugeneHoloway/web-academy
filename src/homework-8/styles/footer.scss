@@ -1,0 +1,97 @@
+.footer {
+    max-width: 1440px;
+    height: 246px;
+    background-color: #232323;
+    padding: 0 167px;
+    display: flex;
+    flex-direction: row;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info__link {
+    color: #cacaca;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    padding: 20px 0 0 0;
+    font-weight: 100;
+}
+
+.conditions {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.info__terms {
+    color: #808080;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0 100px;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
+.geo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* в чем проблема???????????????????????????? */
+}
+
+.geo__address {
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 20px 0 0 0;
+    font-weight: 100;
+}
+
+.address__icon {
+    color: #fff;
+    font-size: 2rem;
+    padding: 20px 0 0 10px;
+    font-weight: 100;
+}
+
+.icon__location {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.geo__social-media {
+    font-size: 30px;
+    color: #fff;
+}
+
+.credentials {
+    max-width: 1440px;
+    height: 52px;
+    background-color: $primary-color;
+}
+
+.credentials__details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 167px;
+    height: 50%;
+    transform: translateY(50%)
+}
+
+.credentials__title {
+    color: #fff;
+    font-size: 16px;
+}
+
+.credentials__copyright {
+    color: #fff;
+    font-size: 9px;
+    font-weight: 100;
+    text-align: center;
+}

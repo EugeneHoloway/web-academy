@@ -1,0 +1,136 @@
+@import './mixins';
+.featuring {
+    max-height: 300px;
+    @include mobile {
+        max-height: 900px;
+    }
+}
+
+.featuring__movie-details {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: space-between;
+}
+
+.featuring__movie-1 {
+    height: 290px;
+    width: 33.33334%;
+    margin: 5px 5px 5px 0;
+    background-image: url(../../assets/images/lethal-weapon-1864x1048.jpg);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    @include laptop {
+        background-size: 100%;
+        background-image: url(../../assets/images/lethal-weapon-1864x1048.jpg);
+    }
+    @include tablet {
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-image: url(../../assets/images/lethal-weapon-1864x1048.jpg);
+    }
+    @include mobile {
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-image: url(../../assets/images/lethal-weapon-1864x1048.jpg);
+        width: 100%;
+        margin: 5px 0 0 0;
+    }
+}
+
+.featuring__movie-2 {
+    height: 290px;
+    width: 33.33334%;
+    margin: 5px 5px 5px 0;
+    background-image: url(../../assets/images/chicago-fire.jpg);
+    background-position: contain;
+    background-position: 60% 10%;
+    background-repeat: no-repeat;
+    @include laptop {
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-image: url(../../assets/images/chicago-fire.jpg);
+    }
+    @include tablet {
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-image: url(../../assets/images/chicago-fire.jpg);
+    }
+    @include mobile {
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-image: url(../../assets/images/chicago-fire.jpg);
+        width: 100%;
+        margin: 5px 0 0 0;
+    }
+}
+
+.featuring__movie-3 {
+    height: 290px;
+    width: 33.33334%;
+    margin: 5px 0 5px 0;
+    background-image: url(../../assets/images/theblacklist.jpg);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    @include laptop {
+        background-size: 100%;
+        background-image: url(../../assets/images/theblacklist.jpg);
+    }
+    @include tablet {
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-image: url(../../assets/images/theblacklist.jpg);
+    }
+    @include mobile {
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-image: url(../../assets/images/theblacklist.jpg);
+        width: 100%;
+        margin: 5px 0 5px 0;
+    }
+}
+
+.featuring__movie-details {
+    display: flex;
+    justify-content: flex-end;
+    @include mobile {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+.featuring-movie-details__rating {
+    height: 80%;
+    transform: translateY(80%);
+    color: $rating-color;
+    padding-left: $default-left-padding;
+}
+
+.featuring-movie-details__title {
+    display: flex;
+    color: $rating-color;
+    padding-left: 22px;
+}
+
+.featuring-movie-rating__movie {
+    font-size: 50px;
+}
+
+.featuring-movie-rating__max {
+    font-size: 40px;
+}
+
+.featuring-movie-details__title {
+    color: $movie-title-color;
+    font-size: 30px;
+}
