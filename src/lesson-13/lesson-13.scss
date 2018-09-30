@@ -1,0 +1,24 @@
+.switcher {
+    width: 100px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.result {
+    width: 100px;
+    background: yellow;
+}
+
+.result {
+    &.off {
+        display: none;
+    }
+}
+
+.block {
+    display: none;
+    &_visible {
+        display: block;
+    }
+}

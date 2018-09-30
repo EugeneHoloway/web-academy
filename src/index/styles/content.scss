@@ -1,0 +1,157 @@
+.content {
+    max-width: 2800px;
+    padding: 20px 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content__left-side {
+    width: 49%;
+}
+
+.content__center {
+    width: 24.5%;
+    border: 1px dashed #666;
+    background-color: #fff;
+}
+
+.content__right-side {
+    width: 24.5%;
+    padding-bottom: 90px;
+}
+
+.right-side__info {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 100%;
+    box-shadow: 2px 2px 15px #ccc;
+    &:hover {
+        box-shadow: 2px 2px 15px #bbb;
+        transition: all 0.4s;
+    }
+}
+
+.right-side__info-menu {
+    background-color: #f2f2f2;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-menu__title {
+    margin: 0 auto;
+}
+
+.info-menu__description {
+    margin: 0 auto;
+}
+
+.info-menu__links {
+    margin: 0 auto;
+}
+
+.info-item__links-html-css {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    font-weight: 700;
+}
+
+.info-item__links-html-css-books {
+    font-weight: 100;
+}
+
+.fas {
+    color: #595959;
+    line-height: 30px;
+}
+
+.fa-angle-down {
+    font-size: 9px;
+    padding: 0 5px;
+}
+
+.right-side__info-items {
+    display: flex;
+    background-color: #fff;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.right-side__info-block {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.info-items__title {
+    font-size: 18px;
+}
+
+.info-item__description {
+    font-size: 11px;
+}
+
+.info-item__links {
+    font-weight: 600;
+    text-shadow: none;
+    padding-top: 10px;
+}
+
+blockquote {
+    display: block;
+    background: #fff;
+    padding: 15px 20px 15px 65px;
+    margin: 0 0 20px;
+    position: relative;
+    /*Font*/
+    line-height: 1.2;
+    color: #666;
+    text-align: justify;
+    /*Borders - (Optional)*/
+    border-left: 15px solid #c76c0c;
+    border-right: 2px solid #c76c0c;
+    /*Box Shadow - (Optional)*/
+    -moz-box-shadow: 2px 2px 15px #ccc;
+    -webkit-box-shadow: 2px 2px 15px #ccc;
+    box-shadow: 2px 2px 15px #ccc;
+}
+
+blockquote::before {
+    content: "\201C";
+    /*Unicode for Left Double Quote*/
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #999;
+    /*Positioning*/
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+blockquote::after {
+    /*Reset to make sure*/
+    content: "";
+}
+
+blockquote a {
+    text-decoration: none;
+    background: #eee;
+    cursor: pointer;
+    padding: 0 3px;
+    color: #c76c0c;
+}
+
+blockquote a:hover {
+    color: #666;
+}
+
+blockquote em {
+    font-style: italic;
+}

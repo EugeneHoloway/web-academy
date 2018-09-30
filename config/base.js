@@ -15,6 +15,20 @@ const baseConf = (_path) => {
         'lesson-8': ['./src/lesson-8/lesson-8.js'],
         'homework-6': ['./src/homework-6/homework-6.js'],
         'homework-8': ['./src/homework-8/homework-8.js'],
+        'lesson-9': ['./src/lesson-9/lesson-9.js'],
+        'lesson-10': ['./src/lesson-10/lesson-10.js'],
+        'lesson-11': ['./src/lesson-11/lesson-11.js'],
+        'homework-11': ['./src/homework-11/homework-11.js'],
+        'lesson-12': ['./src/lesson-12/lesson-12.js'],
+        'lesson-12a': ['./src/lesson-12a/lesson-12a.js'],
+        'homework-12a': ['./src/homework-12a/homework-12a.js'],
+        'homework-12b': ['./src/homework-12b/homework-12b.js'],
+        'lesson-13': ['./src/lesson-13/lesson-13.js'],
+        'homework-13': ['./src/homework-13/homework-13.js'],
+        'lesson-14': ['./src/lesson-14/lesson-14.js'],
+        'homework-14': ['./src/homework-14/homework-14.js'],
+        'homework-14a': ['./src/homework-14a/homework-14a.js'],
+        'lesson-15': ['./src/lesson-15/lesson-15.js'],
     };
 
     const plugins = Object.keys(entry).reduce((acc, name) => {

@@ -1,10 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import './styles/tooltips';
+@import './styles/header';
+@import './styles/content';
+@import './styles/footer';
 * {
     box-sizing: border-box;
 }
 
 html {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 body {
@@ -12,7 +16,7 @@ body {
     padding: 0;
     font-family: 'Source Sans Pro', Arial, serif;
     background-color: #fafafa;
-    font-size: 14px;
+    font-size: 13px;
     color: #595959;
     text-shadow: 0 1px 0 #fff;
 }
@@ -29,24 +33,11 @@ ul {
     list-style: none;
 }
 
-.web-academy {
-    max-width: 1400px;
-    padding: 0 5%;
-    margin: 0 auto;
-}
-
-.header {
-    position: relative;
-    width: 100%;
-    height: 100px;
-    border-bottom: 1px solid #d9d9d9;
-    padding: 10px 0;
-}
-
 .customers {
     border-collapse: collapse;
-    width: 50%;
+    width: 100%;
     margin: 10px 0;
+    box-shadow: 2px 2px 15px #ccc;
 }
 
 .customers td,
@@ -67,22 +58,17 @@ ul {
     padding-top: 8px;
     padding-bottom: 8px;
     text-align: left;
-    background-color: #4CAF50;
+    background-color: #337ab7;
     color: white;
     font-weight: 100;
-}
-
-.footer {
-    border-top: 1px solid #d9d9d9;
-    text-align: center;
-    padding: 10px 0;
+    text-shadow: none;
 }
 
 .label__lesson {
     border: 1px solid transparent;
     border-color: #205081;
     background-color: #205081;
-    border-radius: 20px;
+    border-radius: 3px;
     padding: 0 5px;
     color: #fff;
     text-shadow: none;
@@ -94,7 +80,7 @@ ul {
     border: 1px solid transparent;
     border-color: #2d8120;
     background-color: #2d8120;
-    border-radius: 20px;
+    border-radius: 3px;
     padding: 0 5px;
     color: #fff;
     text-shadow: none;
@@ -106,7 +92,7 @@ ul {
     border: 1px solid transparent;
     border-color: orangered;
     background-color: orangered;
-    border-radius: 20px;
+    border-radius: 3px;
     padding: 0 5px;
     color: #fff;
     text-shadow: none;
@@ -118,7 +104,7 @@ ul {
     border: 1px solid transparent;
     border-color: rgb(100, 100, 100);
     background-color: rgb(100, 100, 100);
-    border-radius: 20px;
+    border-radius: 3px;
     padding: 0 5px;
     color: #fff;
     text-shadow: none;

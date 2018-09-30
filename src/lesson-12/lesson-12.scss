@@ -1,0 +1,56 @@
+$padding-left: 12.5px;
+@mixin btnResetDefault {
+    border: none;
+    font-size: 1rem;
+    text-align: left;
+    background-color: transparent;
+}
+
+.select {
+    display: inline-block;
+    width: 180px;
+    position: relative;
+    &__header {
+        @include btnResetDefault;
+        background-color: rgb(20, 38, 225);
+        color: #fff;
+        height: 25px;
+        width: 100%;
+        border-radius: 50px;
+        padding: 0 $padding-left;
+    }
+    &__options {
+        position: absolute;
+        left: $padding-left;
+        background-color: rgb(4, 8, 44);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        width: calc(100% - #{$padding-left * 2});
+        visibility: hidden;
+        opacity: 0;
+        transition: all 400ms;
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+    &__option {
+        margin: $padding-left 0;
+    }
+    &__control {
+        @include btnResetDefault;
+        color: rgb(255, 255, 255);
+        padding: 0 $padding-left;
+        width: 100%;
+        &:hover {
+            background-color: rgb(20, 38, 225);
+        }
+    }
+    &_opened {
+        .select__options {
+            transform: scaleY(1);
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}

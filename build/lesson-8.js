@@ -86,7 +86,7 @@ __webpack_require__(338);
 /***/ 338:
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n    <title>Document</title>\r\n</head>\r\n\r\n<body>\r\n    <h1>Hello World 2</h1>\r\n</body>\r\n\r\n</html>";
+// removed by extract-text-webpack-plugin
 
 /***/ })
 

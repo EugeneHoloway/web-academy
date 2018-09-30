@@ -1,0 +1,29 @@
+.output-true {
+    color: green;
+    border: 1px solid green;
+    background-color: green;
+    color: white;
+    width: 200px;
+}
+
+.output-false {
+    color: red;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    width: 200px;
+}
+
+.name-pass-true {
+    color: green;
+    border: 1px solid green;
+    width: 200px;
+    color: black;
+}
+
+.name-pass-false {
+    color: red;
+    border: 1px solid red;
+    width: 200px;
+    color: black;
+}

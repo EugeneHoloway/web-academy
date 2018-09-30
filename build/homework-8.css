@@ -1,0 +1,760 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
+  *:active, *:hover, *:focus {
+    outline: 0; }
+
+html {
+  height: 100%;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 12px; }
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+figure {
+  margin: 0;
+  padding: 0; }
+
+ul,
+ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.page-header {
+  height: 505px;
+  background-color: black;
+  background-image: url(./assets/images/header-lesson-8.png);
+  background-position: right center;
+  background-repeat: no-repeat; }
+  @media (max-width: 1439.9px) {
+    .page-header {
+      background-size: 100%;
+      height: 480px;
+      background-image: url(./assets/images/header-lesson-8-992px.png); } }
+  @media (max-width: 991.9px) {
+    .page-header {
+      background-size: 100%;
+      height: 380px;
+      background-image: url(./assets/images/header-lesson-8-767px.png); } }
+  @media (max-width: 767.9px) {
+    .page-header {
+      background-position: left contain;
+      height: 320px;
+      background-image: url(./assets/images/header-lesson-8-480px.png); } }
+
+.page-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 0 auto;
+  height: 77px;
+  background-color: #9013fe;
+  opacity: 0.93; }
+
+.page-menu {
+  display: -ms-flexbox;
+  display: flex;
+  display: inline-block;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-positive: 1;
+      flex-grow: 1; }
+
+.page-menu__btn {
+  font-weight: 400;
+  opacity: 1;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: #fff; }
+
+.fa-chevron-down {
+  font-size: 10px;
+  padding-left: 5px; }
+
+.logo {
+  font-size: 30px;
+  color: #fff;
+  padding-left: 45px;
+  padding-right: 20px; }
+
+.page-auth {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 77px;
+  width: 77px;
+  background-color: #fff; }
+  .page-auth .page-auth__auth-details {
+    display: -ms-flexbox;
+    display: flex;
+    display: inline-block;
+    background-color: #fff;
+    -ms-flex-line-pack: center;
+        align-content: center; }
+    .page-auth .page-auth__auth-details .page-search__query {
+      font-size: 1.2rem;
+      padding-left: 10px; }
+
+.auth-details__text {
+  color: #9013fe;
+  height: 50%;
+  -ms-transform: translateY(50%);
+      transform: translateY(50%); }
+
+.fa-search {
+  color: #9013fe;
+  font-size: 24px; }
+
+.page-search {
+  background-color: #ebebeb;
+  height: 77px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 10px; }
+
+.page-search__query {
+  background-color: transparent;
+  border: 1px solid transparent; }
+
+.page-search__icon {
+  background-color: transparent;
+  border: 1px solid transparent; }
+
+.auth-details__icon {
+  width: 50px; }
+
+.fa-user-astronaut {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  font-size: 26px;
+  color: #9013fe;
+  height: 50%;
+  -ms-transform: translateY(50%);
+      transform: translateY(50%); }
+
+.page-header__movie-details {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  height: 20%;
+  -ms-transform: translateY(50%);
+      transform: translateY(50%);
+  padding-left: 45px;
+  width: 30%; }
+  @media (max-width: 991.9px) {
+    .page-header__movie-details {
+      width: 70%;
+      height: 5%; } }
+
+.movie-details__rating {
+  color: #ffce00; }
+
+.rating__movie {
+  font-size: 50px; }
+  @media (max-width: 991.9px) {
+    .rating__movie {
+      font-size: 40px; } }
+  @media (max-width: 991.9px) and (max-width: 767.9px) {
+    .rating__movie {
+      font-size: 30px; } }
+
+.rating__max {
+  font-size: 40px; }
+  @media (max-width: 991.9px) {
+    .rating__max {
+      font-size: 30px; } }
+  @media (max-width: 991.9px) and (max-width: 767.9px) {
+    .rating__max {
+      font-size: 20px; } }
+
+.movie-details__title {
+  color: #fff;
+  font-size: 30px; }
+  @media (max-width: 767.9px) {
+    .movie-details__title {
+      font-size: 25px; } }
+
+.movie-details__description {
+  font-size: 12px;
+  color: #fff; }
+
+.movie-details__tag {
+  padding: 5px 10px;
+  font-weight: 100;
+  text-align: center;
+  background-color: #9013fe;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 12px;
+  margin: 10px 10px 20px 0; }
+
+.movie-details__tag {
+  padding: 5px 10px;
+  font-weight: 100;
+  text-align: center;
+  background-color: #9013fe;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 12px;
+  margin: 10px 10px 20px 0; }
+
+.movie-details__review {
+  padding: 15px 30px 30px 30px;
+  font-weight: 100;
+  background-color: #9013fe;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 2px 2px 9px #6200b8;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px; }
+  .movie-details__review:hover {
+    background-color: #fff;
+    color: #9013fe; }
+  @media (max-width: 767.9px) {
+    .movie-details__review {
+      padding: 10px 10px 25px 10px; } }
+
+.content {
+  max-width: 1440px;
+  background-image: linear-gradient(110deg, #3023ae, #a65dce 77%, #c86dd7);
+  padding-top: 60px;
+  padding-bottom: 80px; }
+
+.content__box {
+  max-width: 1110px;
+  height: 555px;
+  background-color: #f5f5f5;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+  @media (max-width: 767.9px) {
+    .content__box {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      height: 750px; } }
+
+.box__movie-details {
+  max-height: 555px;
+  width: 40%;
+  background-image: url(./assets/images/walkingdead.jpg);
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: 100% 100%; }
+  @media (max-width: 1439.9px) {
+    .box__movie-details {
+      background-image: url(./assets/images/walkingdead.jpg);
+      background-size: cover !important;
+      background-repeat: no-repeat;
+      background-position: 100% 100%; } }
+  @media (max-width: 991.9px) {
+    .box__movie-details {
+      background-image: url(./assets/images/walkingdead.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%; } }
+  @media (max-width: 767.9px) {
+    .box__movie-details {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-image: url(./assets/images/walkingdead.jpg);
+      width: 100%;
+      max-height: 700px; } }
+
+.chat__movie-details {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  height: 100%;
+  -ms-transform: translateY(50%);
+      transform: translateY(50%);
+  padding-left: 45px;
+  width: 90%; }
+  @media (max-width: 991.9px) {
+    .chat__movie-details {
+      height: 60%;
+      -ms-transform: translateY(50%);
+          transform: translateY(50%); } }
+  @media (max-width: 991.9px) and (max-width: 767.9px) {
+    .chat__movie-details {
+      height: 5%;
+      -ms-transform: translateY(50%);
+          transform: translateY(50%); } }
+
+.chat-movie-details__rating {
+  color: #ffce00; }
+
+.chat-rating__movie {
+  font-size: 50px; }
+
+.chat-rating__max {
+  font-size: 40px; }
+
+.chat-movie-details__title {
+  color: #fff;
+  font-size: 30px; }
+
+.chat-movie-details__description {
+  font-size: 12px;
+  color: #fff; }
+
+.chat-movie-details__tag {
+  padding: 5px 10px;
+  font-weight: 100;
+  text-align: center;
+  background-color: #9013fe;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 12px;
+  margin: 10px 10px 20px 0; }
+
+.chat-movie-details__review {
+  padding: 15px 30px 30px 30px;
+  font-weight: 100;
+  background-color: #9013fe;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 2px 2px 9px #6200b8;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px; }
+  .chat-movie-details__review:hover {
+    background-color: #fff;
+    color: #9013fe; }
+
+.box__movie-chat {
+  width: 60%; }
+  @media (max-width: 767.9px) {
+    .box__movie-chat {
+      width: 100%; } }
+
+.box__title {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 34px; }
+
+.title__comments {
+  font-size: 30px;
+  color: #4a4a4a;
+  margin: 0 auto; }
+
+.box__comments {
+  padding: 0 22px 22px 22px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.comments__block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 90%; }
+
+.comment__icon-1 {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 23px;
+  color: #888888;
+  line-height: 2;
+  overflow: hidden;
+  max-height: 160px; }
+
+.comment__icon-2 {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 23px;
+  color: #888888;
+  line-height: 2;
+  overflow: hidden;
+  max-height: 160px; }
+
+.comment__1 {
+  overflow: hidden; }
+
+.user__details {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.user__name-date {
+  padding-left: 10px;
+  line-height: 150%;
+  -ms-flex-positive: 1;
+      flex-grow: 1; }
+
+.user__name {
+  font-weight: 600; }
+
+.user__comment-date {
+  font-size: 10px;
+  vertical-align: top; }
+
+.user__comment-heart {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+
+.fa-heart {
+  color: red;
+  font-size: 18px; }
+
+.user__icon {
+  max-width: 34px;
+  max-height: 34px; }
+
+.comments__scroll {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 10%; }
+
+.scroll__inactive {
+  width: 5px;
+  height: 340px;
+  margin: 0 auto;
+  background-color: #e4e4e4;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  z-index: 1; }
+
+.scroll__active {
+  width: 5px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: #9013fe;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  z-index: 2; }
+
+.write-comment {
+  background-color: #fff;
+  height: 35px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 10px 10px;
+  background-color: #fff;
+  border: 0px solid;
+  margin: 0 24px;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.fa-paper-plane {
+  background: none;
+  border: 0px;
+  font-size: 18px;
+  color: #9013fe; }
+
+.write-comment__query {
+  background: none;
+  border: 0px; }
+
+.write-comment__icon {
+  background: none;
+  border: 0px; }
+
+.footer {
+  max-width: 1440px;
+  height: 246px;
+  background-color: #232323;
+  padding: 0 167px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.info__link {
+  color: #cacaca;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  font-size: 1.2rem;
+  padding: 20px 0 0 0;
+  font-weight: 100; }
+
+.conditions {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-positive: 1;
+      flex-grow: 1; }
+
+.info__terms {
+  color: #808080;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding: 20px 0 0 100px;
+  font-weight: 100;
+  font-size: 1.2rem; }
+
+.geo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  /* в чем проблема???????????????????????????? */ }
+
+.geo__address {
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 20px 0 0 0;
+  font-weight: 100; }
+
+.address__icon {
+  color: #fff;
+  font-size: 2rem;
+  padding: 20px 0 0 10px;
+  font-weight: 100; }
+
+.icon__location {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+
+.geo__social-media {
+  font-size: 30px;
+  color: #fff; }
+
+.credentials {
+  max-width: 1440px;
+  height: 52px;
+  background-color: #9013fe; }
+
+.credentials__details {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 167px;
+  height: 50%;
+  -ms-transform: translateY(50%);
+      transform: translateY(50%); }
+
+.credentials__title {
+  color: #fff;
+  font-size: 16px; }
+
+.credentials__copyright {
+  color: #fff;
+  font-size: 9px;
+  font-weight: 100;
+  text-align: center; }
+
+.featuring {
+  max-height: 300px; }
+  @media (max-width: 767.9px) {
+    .featuring {
+      max-height: 900px; } }
+
+.featuring__movie-details {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  background-color: black;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.featuring__movie-1 {
+  height: 290px;
+  width: 33.33334%;
+  margin: 5px 5px 5px 0;
+  background-image: url(./assets/images/lethal-weapon-1864x1048.jpg);
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: 100% 100%; }
+  @media (max-width: 1439.9px) {
+    .featuring__movie-1 {
+      background-size: 100%;
+      background-image: url(./assets/images/lethal-weapon-1864x1048.jpg); } }
+  @media (max-width: 991.9px) {
+    .featuring__movie-1 {
+      background-size: cover !important;
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      background-image: url(./assets/images/lethal-weapon-1864x1048.jpg); } }
+  @media (max-width: 767.9px) {
+    .featuring__movie-1 {
+      background-size: cover !important;
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      background-image: url(./assets/images/lethal-weapon-1864x1048.jpg);
+      width: 100%;
+      margin: 5px 0 0 0; } }
+
+.featuring__movie-2 {
+  height: 290px;
+  width: 33.33334%;
+  margin: 5px 5px 5px 0;
+  background-image: url(./assets/images/chicago-fire.jpg);
+  background-position: contain;
+  background-position: 60% 10%;
+  background-repeat: no-repeat; }
+  @media (max-width: 1439.9px) {
+    .featuring__movie-2 {
+      background-size: cover !important;
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      background-image: url(./assets/images/chicago-fire.jpg); } }
+  @media (max-width: 991.9px) {
+    .featuring__movie-2 {
+      background-size: cover !important;
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      background-image: url(./assets/images/chicago-fire.jpg); } }
+  @media (max-width: 767.9px) {
+    .featuring__movie-2 {
+      background-size: cover !important;
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      background-image: url(./assets/images/chicago-fire.jpg);
+      width: 100%;
+      margin: 5px 0 0 0; } }
+
+.featuring__movie-3 {
+  height: 290px;
+  width: 33.33334%;
+  margin: 5px 0 5px 0;
+  background-image: url(./assets/images/theblacklist.jpg);
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: 100% 100%; }
+  @media (max-width: 1439.9px) {
+    .featuring__movie-3 {
+      background-size: 100%;
+      background-image: url(./assets/images/theblacklist.jpg); } }
+  @media (max-width: 991.9px) {
+    .featuring__movie-3 {
+      background-size: cover !important;
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      background-image: url(./assets/images/theblacklist.jpg); } }
+  @media (max-width: 767.9px) {
+    .featuring__movie-3 {
+      background-size: cover !important;
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      background-image: url(./assets/images/theblacklist.jpg);
+      width: 100%;
+      margin: 5px 0 5px 0; } }
+
+.featuring__movie-details {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+  @media (max-width: 767.9px) {
+    .featuring__movie-details {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      width: 100%; } }
+
+.featuring-movie-details__rating {
+  height: 80%;
+  -ms-transform: translateY(80%);
+      transform: translateY(80%);
+  color: #ffce00;
+  padding-left: 45px; }
+
+.featuring-movie-details__title {
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffce00;
+  padding-left: 22px; }
+
+.featuring-movie-rating__movie {
+  font-size: 50px; }
+
+.featuring-movie-rating__max {
+  font-size: 40px; }
+
+.featuring-movie-details__title {
+  color: #fff;
+  font-size: 30px; }
+
+body {
+  max-width: 1440px;
+  margin: 0 auto; }

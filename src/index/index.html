@@ -6,108 +6,304 @@
     <title>Lessons and Homeworks</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAADIyMgAPj4+AN/f3wCjo6MA////AJWVlQDq6uoAvLy8AHd3dwAkJCQAsLCwAPX19QABAQEAZmZmAIaGhgDU1NQAU1NTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEBAQEBAQEBAQEBAQEBAQEBAsPBA8KAA8EBAQEBAQEBAQPDAkJDQ0MDQIEBAQEBAQEDwwOCwQEAgkQBAQEBAQEBA8BCwQEBAQODAYEBAQEBAQCAwQEBAQEEAwCBAQEBAQEBAQEBAQEDgwJBAQEBAQEBAQEBAQHAQwMAAQEBAQEBAQEBAABDAwNAgQEBAQEBAQEBAMMDA0PBAQEBAQEBAQEBAYMDAcEBAQGBgQEBAQEBAQPDAUEBAQEAwMEBAQEBAQEDwwDBAQECwEDBAQEBAQEBAQQCQ8EAg0MAwQEBAQEBAQECw4MDAkIBQcEBAQEBAQEBAQEBAQEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="web-academy">
-        <div class="header">
+    <div class="header">
+        <div class="header_items">
             <div class="logo">
                 <h2>SCOREBOARD</h2>
-                <p>“If you're going through hell, keep going.”<br> ― Winston Churchill</p>
+            </div>
+            <button class="btn btn__create"><a href="#">Create</a></button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content__left-side">
+            <div class="label">
+                <div class="label__title tooltip">Labels:
+                    <span class="tooltiptext">Tooltip text</span>
+                </div>
+                <ul class="btn_label">
+                    <li class="btn button__lesson" title="Create a new issue / bug / feature request / etc ( Type 'c' )"><a href="#">lesson</a></li>
+                    <li class="btn button__homework"><a href="#">homework</a></li>
+                </ul>
+            </div>
+            <div class="tag">
+                <div class="tag__title tooltip">Tags:
+                    <span class="tooltiptext">It's just a tooltip text for some elements</span>
+                </div>
+
+                <div class="btn button__active">#active</div>
+                <div class="btn button__inactive">#inactive</div>
+            </div>
+
+            <table class="customers">
+                <tr>
+                    <th>#</th>
+                    <th>ID</th>
+                    <th>Activity</th>
+                    <th>Date</th>
+                    <th>Label</th>
+                    <th>#tag</th>
+
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Lesson 1</td>
+                    <td>Intro. HTML.</td>
+                    <td>Aug 10, 2018</td>
+                    <td><span class="label__lesson">lesson</span></td>
+                    <td><span class="tag__inactive">#inactive</span></td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Homework 1</td>
+                    <td>HTML (Recipe, HTML page)</td>
+                    <td>---</td>
+                    <td><span class="label__homework">homework</span></td>
+                    <td><span class="tag__inactive">#inactive</span></td>
+
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Lesson 4</td>
+                    <td>----</td>
+                    <td>---</td>
+                    <td><span class="label__lesson">lesson</span></td>
+                    <td><span class="tag__inactive">#inactive</span></td>
+
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Homework 4</td>
+                    <td>----</td>
+                    <td>---</td>
+                    <td><span class="label__homework">homework</span></td>
+                    <td><span class="tag__inactive">#inactive</span></td>
+
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Lesson 5</td>
+                    <td>Flexbox</td>
+                    <td>---</td>
+                    <td><span class="label__lesson">lesson</span></td>
+                    <td><span class="tag__inactive">#inactive</span></td>
+
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Homework 5</td>
+                    <td>Flexbox</td>
+                    <td>---</td>
+                    <td><span class="label__homework">homework</span></td>
+                    <td><span class="tag__inactive">#inactive</span></td>
+
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Homework 6</td>
+
+                    <td><a href="./homework-6.html">THEMOVIEBOX (Landing)</a></td>
+                    <td>---</td>
+                    <td><span class="label__homework">homework</span></td>
+                    <td><span class="tag__active">#active</span></td>
+
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Lesson 7</td>
+                    <td><a href="./lesson-7.html">Git setup</a></td>
+                    <td>---</td>
+                    <td><span class="label__lesson">lesson</span></td>
+                    <td><span class="tag__active">#active</span></td>
+
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Homework 7</td>
+                    <td><a href="./lesson-6.html">Add Homework-6 to Webpack_Seed</a></td>
+                    <td>---</td>
+                    <td><span class="label__homework">homework</span></td>
+                    <td><span class="tag__active">#active</span></td>
+
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Lesson 7</td>
+                    <td><a href="./lesson-8.html">.scss variables, mixins - THEMOVIEBOX (Landing)</a></td>
+                    <td>---</td>
+                    <td><span class="label__lesson">lesson</span></td>
+                    <td><span class="tag__active">#active</span></td>
+
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Homework 8</td>
+                    <td><a href="./homework-8.html">TVshowCritic (Landing)</a></td>
+                    <td>---</td>
+                    <td><span class="label__homework">homework</span></td>
+                    <td><span class="tag__active">#active</span></td>
+
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Lesson 9</td>
+                    <td><a href="./lesson-9.html">Apple menu</a></td>
+                    <td>---</td>
+                    <td><span class="label__lesson">lesson</span></td>
+                    <td><span class="tag__active">#active</span></td>
+
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Lesson 10</td>
+                    <td><a href="./lesson-10.html">Intro. Theory about Javascript</a></td>
+                    <td>---</td>
+                    <td><span class="label__lesson">lesson</span></td>
+                    <td><span class="tag__active">#active</span></td>
+
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Lesson 11</td>
+                    <td><a href="./lesson-11.html">Javascript. Log in form</a></td>
+                    <td>Sept 15, 2018</td>
+                    <td><span class="label__lesson">lesson</span></td>
+                    <td><span class="tag__active">#active</span></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Homework 11</td>
+                    <td><a href="./homework-11.html">Javascript. Submenu.</a></td>
+                    <td>Sept. 15, 2018</td>
+                    <td><span class="label__homework">homework</span></td>
+                    <td><span class="tag__active">#active</span></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Lesson 12</td>
+                    <td><a href="./lesson-12.html">Javascript. Submenu</a></td>
+                    <td>Sept 16, 2018</td>
+                    <td><span class="label__lesson">lesson</span></td>
+                    <td><span class="tag__active">#active</span></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Lesson 12a</td>
+                    <td><a href="./lesson-12a.html">Javascript. Traffic light</a></td>
+                    <td>Sept 16, 2018</td>
+                    <td><span class="label__lesson">lesson</span></td>
+                    <td><span class="tag__active">#active</span></td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Homework 12a</td>
+                    <td><a href="./homework-12a.html">Javascript. Tabs</a></td>
+                    <td>Sept. 17-21, 2018</td>
+                    <td><span class="label__homework">homework</span></td>
+                    <td><span class="tag__active">#active</span></td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Homework 12b</td>
+                    <td><a href="./homework-12b.html">Javascript. Tabs accordeon</a></td>
+                    <td>Sept. 17-21, 2018</td>
+                    <td><span class="label__homework">homework</span></td>
+                    <td><span class="tag__active">#active</span></td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Lesson 13</td>
+                    <td><a href="./lesson-13.html">Javascript. One function to different elements. + Click -> Action</a></td>
+                    <td>Sept 22, 2018</td>
+                    <td><span class="label__lesson">lesson</span></td>
+                    <td><span class="tag__active">#active</span></td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Homework 13</td>
+                    <td><a href="./homework-13.html">Javascript.  + Click->Action</a></td>
+                    <td>Sept. 22, 2018</td>
+                    <td><span class="label__homework">homework</span></td>
+                    <td><span class="tag__active">#active</span></td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Lesson 14</td>
+                    <td><a href="./lesson-14.html">Javascript. Traffic Lighter: Outoswitch + Mouseover</a></td>
+                    <td>Sept 23, 2018</td>
+                    <td><span class="label__lesson">lesson</span></td>
+                    <td><span class="tag__active">#active</span></td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>Homework 14</td>
+                    <td><a href="./homework-14.html">Javascript. Toggle On/Off</a><br><a href="./homework-14a.html">Javascript. Toggle On/Off + Lamp Blink</a></td>
+                    <td>Sept. 23-27, 2018</td>
+                    <td><span class="label__homework">homework</span></td>
+                    <td><span class="tag__active">#active</span></td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>Lesson 15</td>
+                    <td><a href="./lesson-15.html">Javascript.</a></td>
+                    <td>Sept 29, 2018</td>
+                    <td><span class="label__lesson">lesson</span></td>
+                    <td><span class="tag__active">#active</span></td>
+                </tr>
+            </table>
+        </div>
+        <div class="content__center">
+            <div class="project">The final project. TBA</div>
+        </div>
+        <div class="content__right-side">
+            <blockquote>
+                <b>If you're going through hell, keep going.</b><br> ― Misattributed quote to Winston Churchill
+            </blockquote>
+            <div class="right-side__info">
+                <div class="right-side__info-menu">
+                    <div class="info-menu__title">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="info-menu__description">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <div class="info-menu__links">
+                        <i class="fas fa-external-link-alt"></i>
+                    </div>
+                </div>
+                <div class="right-side__info-items">
+                    <div class="right-side__info-block">
+                        <div class="info-items__title">Literature</div>
+                        <div class="info-item__description">Articles, books & useful links about front-end, coding and stuff like that.</div>
+                        <div class="info-item__links">Useful links<i class="fas fa-angle-down"></i></div>
+                    </div>
+                    <div class="info-item__links-block">
+                        <div class="info-item__links-useful-links">
+                            <ul class="info-item__links-html-css">HTML&CSS
+                                <li class="info-item__links-html-css-books">Intro book bla-bla</li>
+                                <li class="info-item__links-html-css-books">Codebook bla-bla</li>
+                            </ul>
+                        </div>
+                        <div class="info-item__links-useful-links">Javascript</div>
+                        <div class="info-item__links-useful-links">ReactJS</div>
+                        <div class="info-item__links-useful-links">Other</div>
+                    </div>
+
+                </div>
             </div>
         </div>
-        <div class="label">
-            <div class="label__title">Labels:</div>
-
-            <div class="btn button__lesson">lesson</div>
-            <div class="btn button__homework">homework</div>
-        </div>
-        <div class="tag">
-            <div class="tag__title">Tags:</div>
-
-            <div class="btn button__active">#active</div>
-            <div class="btn button__inactive">#inactive</div>
-        </div>
-
-        <table class="customers">
-            <tr>
-                <th>#</th>
-                <th>Activity</th>
-                <th>Label</th>
-                <th>#tag</th>
-            </tr>
-            <tr>
-                <td>Lesson 1</td>
-                <td>Intro. HTML.</td>
-                <td><span class="label__lesson">lesson</span></td>
-                <td><span class="tag__inactive">#inactive</span></td>
-            </tr>
-            <tr>
-                <td>Homework 1</td>
-                <td>HTML (Recipe, HTML page)</td>
-                <td><span class="label__homework">homework</span></td>
-                <td><span class="tag__inactive">#inactive</span></td>
-            </tr>
-            <tr>
-                <td>Lesson 4</td>
-                <td>----</td>
-                <td><span class="label__lesson">lesson</span></td>
-                <td><span class="tag__inactive">#inactive</span></td>
-            </tr>
-            <tr>
-                <td>Homework 4</td>
-                <td>----</td>
-                <td><span class="label__homework">homework</span></td>
-                <td><span class="tag__inactive">#inactive</span></td>
-            </tr>
-
-            <tr>
-                <td>Lesson 5</td>
-                <td>Flexbox</td>
-                <td><span class="label__lesson">lesson</span></td>
-                <td><span class="tag__inactive">#inactive</span></td>
-            </tr>
-            <tr>
-                <td>Homework 5</td>
-                <td>Flexbox</td>
-                <td><span class="label__homework">homework</span></td>
-                <td><span class="tag__inactive">#inactive</span></td>
-            </tr>
-            <tr>
-                <td>Homework 6</td>
-                <td><a href="./homework-6.html">THEMOVIEBOX (Landing)</a></td>
-                <td><span class="label__homework">homework</span></td>
-                <td><span class="tag__active">#active</span></td>
-            </tr>
-            <tr>
-                <td>Lesson 7</td>
-                <td><a href="./lesson-7.html">Git setup</a></td>
-                <td><span class="label__lesson">lesson</span></td>
-                <td><span class="tag__active">#active</span></td>
-            </tr>
-            <tr>
-                <td>Homework 7</td>
-                <td><a href="./lesson-6.html">Add Homework-6 to Webpack_Seed</a></td>
-                <td><span class="label__homework">homework</span></td>
-                <td><span class="tag__active">#active</span></td>
-            </tr>
-            <tr>
-                <td>Lesson 7</td>
-                <td><a href="./lesson-8.html">.scss variables, mixins - THEMOVIEBOX (Landing)</a></td>
-                <td><span class="label__lesson">lesson</span></td>
-                <td><span class="tag__active">#active</span></td>
-            </tr>
-            <tr>
-                <td>Homework 8</td>
-                <td><a href="./homework-8.html">TVshowCritic (Landing)</a></td>
-                <td><span class="label__homework">homework</span></td>
-                <td><span class="tag__active">#active</span></td>
-            </tr>
-
-        </table>
-        <div class="footer">
-            <a href="https://web-academy.com.ua">Web-Academy</a>, 2018<br> Teacher: Ilya Litvinov<br> Student: Eugene Holoway
-        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="footer__text"><a href="https://web-academy.com.ua">Web-Academy</a>, 2018<br> Teacher: Ilya Litvinov<br> Student: Eugene Holoway</div>
+    </div>
     </div>
 </body>
 
