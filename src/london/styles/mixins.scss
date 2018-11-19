@@ -1,0 +1,62 @@
+@import './variables';
+$xs-screen: 576px;
+$sm-screen: 768px;
+$md-screen: 992px;
+$lg-screen: 1440px;
+@mixin xs-mobile {
+    @media (max-width: #{$xs-screen - 0.1px}) {
+        @content;
+    }
+}
+
+@mixin xs-mobile-markets {
+    @media (max-width: #{$xs-screen -0.1px}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$sm-screen - 0.1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$md-screen - 0.1px}) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (max-width: #{$lg-screen - 0.1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$lg-screen}) {
+        @content;
+    }
+}
+
+@mixin landscape {
+    @media (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin blue-button {
+    width: 241px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #2387f5;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    &:hover {
+        background-color: #1e78db
+    }
+}

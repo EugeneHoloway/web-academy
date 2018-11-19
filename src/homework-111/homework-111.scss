@@ -1,0 +1,144 @@
+$duration: 450ms;
+$tileWidth: 278px;
+$tileHeight: ($tileWidth / (16/9));
+$iconSize: 50px;
+$growFactor: 1.14; // 1.5 times the original size
+$moveLeft: -($tileWidth * ($growFactor - 1) / 2);
+$moveRight: $tileWidth * ($growFactor - 1);
+.content__tabs {
+    max-width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    &-row {
+        overflow: scroll;
+        width: 100%;
+        &__inner {
+            transition: $duration transform;
+            font-size: 0;
+            white-space: nowrap;
+            margin: ($tileHeight / 2) 0;
+            padding-bottom: 1px; // Account for OS X scroll bar
+        }
+    }
+}
+
+
+/* Custom CSS Scrollbar */
+
+.css-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+    padding-left: 100px;
+    padding-right: 100px;
+    &-track {
+        background-color: transparent;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    &-thumb {
+        height: 6px;
+        border-radius: 100px;
+        background-image: linear-gradient(to right, #e62776, rgba(230, 38, 118, 1));
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+.tab {
+    position: relative;
+    display: inline-block;
+    width: $tileWidth;
+    height: $tileHeight;
+    margin: 0 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: $duration all;
+    transform-origin: center left;
+    &:first-child {
+        margin-left: 20px;
+    }
+    &__container-img {
+        width: $tileWidth;
+        height: $tileHeight;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    &__container-details {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0;
+        top: 0;
+        font-size: 10px;
+        opacity: 0;
+        background-color: rgba(208, 2, 27, 0.79);
+        transition: $duration opacity;
+        border-radius: 10px;
+        &-title {
+            padding-left: 10px;
+            color: #ffffff;
+            padding-top: 10px;
+            font-size: 20px;
+        }
+        &-line {
+            width: 50px;
+            height: 5px;
+            border-bottom: 1px solid #ffffff;
+            margin: 10px;
+            padding-left: 20px;
+        }
+        &-text {
+            color: #ffffff;
+            letter-spacing: -0.3px;
+            font-size: 12px;
+            padding-right: 10px;
+            padding-left: 10px;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            white-space: normal !important;
+        }
+        &-button {
+            width: 120px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: #7b5ba8;
+            border: none;
+            font-size: 14px;
+            font-weight: bold;
+            color: #ffffff;
+            align-items: center;
+            margin: 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+.tab:hover .tab__container-details {
+    opacity: 1;
+}
+
+// *
+// * Hover effects
+// *
+// We assume when you hover .row, you're also hovering a .tile
+// First, move the whole row towards the left
+.content__tabs-row__inner:hover {
+    transform: translate3d($moveLeft, 0, 0);
+}
+
+.content__tabs-row__inner:hover .tab {
+    // Fade out every tile
+    opacity: .7;
+    &:hover {
+        transform: scale($growFactor);
+        opacity: 1;
+    }
+}
+
+// And then grow the current tile and make it opaque again
+// And finally move all tiles right of the current tile to the right,
+// so its flush against the hovered tile
+.tab:hover~.tab {
+    transform: translate3d($moveRight, 0, 0);
+}

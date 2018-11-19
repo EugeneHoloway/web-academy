@@ -1,0 +1,1 @@
+import './svoboda-slova-search.scss';

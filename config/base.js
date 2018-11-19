@@ -29,6 +29,19 @@ const baseConf = (_path) => {
         'homework-14': ['./src/homework-14/homework-14.js'],
         'homework-14a': ['./src/homework-14a/homework-14a.js'],
         'lesson-15': ['./src/lesson-15/lesson-15.js'],
+        'homework-15': ['./src/homework-15/homework-15.js'],
+        'homework-15b': ['./src/homework-15b/homework-15b.js'],
+        'lesson-17': ['./src/lesson-17/lesson-17.js'],
+        'london': ['./src/london/london.js'],
+        'homework-111': ['./src/homework-111/homework-111.js'],
+        'homework-112': ['./src/homework-112/homework-112.js'],
+        'svoboda-slova-styles': ['./src/svoboda-slova-styles/svoboda-slova-styles.js'],
+        'svoboda-slova-header': ['./src/svoboda-slova-header/svoboda-slova-header.js'],
+        's-s-menu-temp': ['./src/s-s-menu-temp/s-s-menu-temp.js'],
+        'svoboda-slova-search': ['./src/svoboda-slova-search/svoboda-slova-search.js'],
+
+
+
     };
 
     const plugins = Object.keys(entry).reduce((acc, name) => {

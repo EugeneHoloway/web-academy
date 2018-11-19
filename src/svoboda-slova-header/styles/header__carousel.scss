@@ -1,0 +1,129 @@
+/* ----- */
+
+
+/* Index */
+
+
+/* ----- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    -ms-user-select: none;
+    /* IE10+ */
+    -moz-user-select: none;
+    /* Firefox */
+    // overflow: scroll;
+    //   overflow-x: hidden;
+    -webkit-user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+}
+
+
+/* optional: show position indicator in red */
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+
+/* -------- */
+
+
+/* Carousel */
+
+
+/* -------- */
+
+.carousel {
+    max-width: 1100px;
+    color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    -ms-overflow-style: none; // IE 10+
+    overflow: -moz-scrollbars-none; // Firefox
+}
+
+.carousel::-webkit-scrollbar {
+    display: none; // Safari and Chrome
+}
+
+.slides {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+
+
+/* --------------------------- */
+
+
+/* carousel navigation buttons */
+
+
+/* --------------------------- */
+
+.carouselnav {
+    cursor: pointer;
+    flex-basis: 33.33%;
+    font-size: 16px;
+    max-width: 50px;
+    min-width: 40px;
+    text-align: center;
+    color: #000000;
+}
+
+.carouselnav:hover {
+    background-color: #ff4444;
+}
+
+.carouselitem {
+    color: #000000;
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.carouselitem:hover {
+    color: #000000;
+    transition: 0.4s;
+}
+
+ul {
+    list-style: none;
+    /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.carouselitem p {
+    float: center;
+    font-size: 12pt;
+    line-height: 1.3em;
+    margin-right: 20px;
+    // width: 50%;
+    // background: #ff4444;
+}
+
+
+/* ---------------------- */
+
+
+/* carousel element width */
+
+
+/* ---------------------- */
+
+.col-6 {
+    // flex-basis: 10%;
+    // min-width: 80px;
+}

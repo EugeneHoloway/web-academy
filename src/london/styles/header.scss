@@ -1,0 +1,46 @@
+@import './mixins';
+.header {
+    height: 555px;
+    background-image: url(./assets/images/header/header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header__content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__icon-line {
+    width: 150px;
+    height: 45px;
+    border-bottom: 1px solid #ffffff;
+    position: absolute;
+}
+
+h1 {
+    font-size: 64px;
+    letter-spacing: -1.7px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 100;
+    padding-top: 10px;
+}
+
+.header_description {
+    font-size: 28px;
+    font-weight: 100;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 50px;
+}
+
+.header__button {
+    @include blue-button;
+}

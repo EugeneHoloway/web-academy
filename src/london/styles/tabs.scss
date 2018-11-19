@@ -1,0 +1,131 @@
+@import './mixins';
+.content__tabs {
+    max-width: 100%;
+    padding-left: 100px;
+    @include tablet {
+        padding-left: 50px;
+    }
+    @include mobile {
+        padding-left: 0;
+    }
+    &-row {
+        overflow: scroll;
+        width: 100%;
+        &__inner {
+            transition: $duration transform;
+            font-size: 0;
+            white-space: nowrap;
+            margin: ($tileHeight / 2) 0;
+            padding-bottom: 1px; // Account for OS X scroll bar
+        }
+    }
+}
+
+
+/* Custom CSS Scrollbar */
+
+.css-scrollbar::-webkit-scrollbar {
+    width: 1px;
+    height: 6px;
+    background-color: transparent;
+    padding-left: 100px;
+    &-track {
+        background-color: transparent;
+        padding-left: 100px;
+    }
+    &-thumb {
+        height: 6px;
+        border-radius: 100px;
+        background-image: linear-gradient(to right, #e62776, rgba(230, 38, 118, 1));
+        padding-left: 100px;
+    }
+}
+
+.tab {
+    position: relative;
+    display: inline-block;
+    width: $tileWidth;
+    height: $tileHeight;
+    margin: 0 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: $duration all;
+    transform-origin: center left;
+    &:first-child {
+        margin-left: 20px;
+    }
+    &__container-img {
+        width: $tileWidth;
+        height: $tileHeight;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    &__container-details {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0;
+        top: 0;
+        font-size: 10px;
+        opacity: 0;
+        background-color: rgba(208, 2, 27, 0.79);
+        transition: $duration opacity;
+        border-radius: 10px;
+        &-title {
+            padding-left: 10px;
+            color: #ffffff;
+            padding-top: 10px;
+            font-size: 20px;
+        }
+        &-line {
+            width: 50px;
+            height: 5px;
+            border-bottom: 1px solid #ffffff;
+            padding-left: 20px;
+        }
+        &-text {
+            color: #ffffff;
+            letter-spacing: -0.3px;
+            font-size: 12px;
+            padding-right: 10px;
+            padding-left: 10px;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            white-space: normal !important;
+        }
+        &-button {
+            width: 120px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: #7b5ba8;
+            border: none;
+            font-size: 14px;
+            font-weight: bold;
+            color: #ffffff;
+            align-items: center;
+            margin: 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+.tab:hover .tab__container-details {
+    opacity: 1;
+}
+
+// * Hover effects
+.content__tabs-row__inner:hover {
+    transform: translate3d($moveLeft, 0, 0);
+}
+
+.content__tabs-row__inner:hover .tab {
+    opacity: .7;
+    &:hover {
+        transform: scale($growFactor);
+        opacity: 1;
+    }
+}
+
+.tab:hover~.tab {
+    transform: translate3d($moveRight, 0, 0);
+}

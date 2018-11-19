@@ -12,10 +12,26 @@
     width: 49%;
 }
 
-.content__center {
+.content__center-main {
     width: 24.5%;
-    border: 1px dashed #666;
+    padding-bottom: 90px;
+}
+
+.content__center {
+    min-width: 24.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
     background-color: #fff;
+    box-shadow: 2px 2px 15px #ccc;
+    margin: 0 0 20px;
+    height: 50%;
+    &:hover {
+        box-shadow: 2px 2px 15px #bbb;
+        transition: all 0.4s;
+    }
 }
 
 .content__right-side {
