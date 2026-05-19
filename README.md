@@ -9,7 +9,6 @@ To use: download, unzip, and run the following commands in your terminal (comman
 
 If compilation errors occur, you'll see red error messages in the terminal. The beginning of each message describes what went wrong fairly accurately — pay attention to that. Also, if you have build issues, please attach a screenshot of the console error text to your question.
 
----
 
 **File structure**
 
@@ -34,7 +33,6 @@ src
     +-- styles
 ```
 
----
 
 **Adding a new page**
 
